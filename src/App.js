@@ -9,7 +9,7 @@ import Weather from './Weather';
       
       <Weather />
       <footer>
-        This product is coded by Olena Lupiy and is {""}
+        This product was coded by Olena Lupiy and is {""}
         <a
           href="https://github.com/OlenaLupiy/waether-react-app"
           target="_blank"
