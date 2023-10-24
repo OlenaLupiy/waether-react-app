@@ -1,10 +1,13 @@
 
 import './App.css';
+import Weather from './Weather';
 
  export default function App() {
   return (
     <div className="App">
-      <h1>Weather App</h1>
+      <div className="container">
+      
+      <Weather />
       <footer>
         This product is coded by Olena Lupiy and is {""}
         <a
@@ -15,7 +18,7 @@ import './App.css';
           open-sourced on GitHub
         </a>
       </footer>
-      
+      </div>
     </div>
   );
 }
