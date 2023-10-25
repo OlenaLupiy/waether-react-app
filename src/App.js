@@ -7,7 +7,7 @@ import Weather from './Weather';
     <div className="App">
       <div className="container">
       
-      <Weather />
+      <Weather defaultCity="New York"/>
       <footer>
         This product was coded by Olena Lupiy and is {""}
         <a
