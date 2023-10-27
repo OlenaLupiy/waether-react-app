@@ -31,8 +31,10 @@ list-style: none;
     color: rgd(33, 33, 33);
     margin-left: 10px;
 }
-.Weather img{
-    margin-right: 10px;
+.Weather canvas{
+    margin: 10px auto;
+   
+    
 }
 .Weather .unit{
     font-weight: 400;
@@ -40,6 +42,6 @@ list-style: none;
     line-height: 1;
     color: rgb(33, 33, 33);
     position: relative;
-    top: -34px;
+    top: -14px;
     
 }
