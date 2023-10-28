@@ -30,18 +30,22 @@ list-style: none;
     line-height: 64px;
     color: rgd(33, 33, 33);
     margin-left: 10px;
-}
-.Weather canvas{
-    margin: 10px auto;
+    padding-top: 15px;
    
-    
 }
+
 .Weather .unit{
     font-weight: 400;
     font-size: 16px;
     line-height: 1;
     color: rgb(33, 33, 33);
     position: relative;
-    top: -14px;
+    top: -5px;
+    
+}
+.Weather .butn{
+    background-color: #885DF1;
+    padding: 8px 16px;
+    border-radius: 4px;
     
 }

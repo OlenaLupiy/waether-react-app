@@ -11,19 +11,19 @@ export default function Weather(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
-      temperature: response.data.main.temp,
-      humidity: response.data.main.humidity,
-      date: new Date(response.data.dt * 1000),
+      temperature: response.data.temperature.current,
+      humidity: response.data.temperature.humidity,
+      date: new Date(response.data.time * 1000),
       wind: response.data.wind.speed,
-      city: response.data.name,
-      description: response.data.weather[0].description,
-      icon: response.data.weather[0].icon,
+      city: response.data.city,
+      description: response.data.condition.description,
+      icon:`http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`,
     });
   }
   function search(){
-const keyApi = "bc0a7d7de2ec97549727de4b9f7f2aa4";
+const keyApi = "bfot5b9073814ac4cad9fb1fee3aac2c";
 
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${keyApi}&units=metric`;
+let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${keyApi}&units=metric`;
 axios.get(apiUrl).then(handleResponse);
   }
   function handleSubmit(event) {
@@ -52,7 +52,7 @@ axios.get(apiUrl).then(handleResponse);
               <input
                 type="submit"
                 value="Search"
-                className="btn btn-primary w-100"
+                className="butn  w-100"
               />
             </div>
           </div>
