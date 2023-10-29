@@ -20,6 +20,7 @@ export default function Weather(props) {
       icon:`http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`,
     });
   }
+  
   function search(){
 const keyApi = "bfot5b9073814ac4cad9fb1fee3aac2c";
 
