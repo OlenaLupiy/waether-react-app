@@ -12,10 +12,11 @@ import Weather from './Weather';
           <a
             href="https://github.com/OlenaLupiy/waether-react-app"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             open-sourced on GitHub
-          </a>
+          </a>{" "}
+          and{" "}
           <a
             href="https://master--eloquent-begonia-e9955e.netlify.app/"
             target="_blank"
